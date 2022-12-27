@@ -79,3 +79,7 @@ export const Colors = {
   halfOpacitySecondary: 'rgba(240, 149, 17, 0.5)',
   halfOpacityPrimary: 'rgba(0, 132, 255, 0.5)',
 };
+
+export const Images = {
+  splashScreenImage: require('../Assets/Images/settings.png'),
+};
