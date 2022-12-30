@@ -19,9 +19,9 @@ export interface userProfile {
 }
 
 /**
- * useCachedResources is a hook which is handling SIGNIN SIGNUP and storing the token of a User
+ * AppState is a hook which is handling SIGNIN SIGNUP and storing the token of a User
  */
-export default function useCachedResources() {
+export default function AppState() {
   const initialState: GlobalStateType = {
     userToken: null,
     isLoadingComplete: true,

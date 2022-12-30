@@ -1,15 +1,15 @@
 import React from 'react';
 import { StatusBar, useColorScheme, View, Text, ActivityIndicator } from 'react-native';
+import AppState from './src/ApState/AppState';
 import { Colors } from './src/Components/Theme';
 import { AuthContext } from './src/Constants/Context';
-import useCachedResources from './src/Hooks/CachedResources';
+
 import Navigation from './src/Navigation/Index';
-// import Permission from './src/permission/permission';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
-  const { State, Dispatchers } = useCachedResources();
+  const { State, Dispatchers } = AppState();
 
   if (State.isLoadingComplete) {
     return (

@@ -34,10 +34,9 @@ export default function Navigation() {
     <NavigationContainer>
       {State.isLoadingComplete === true ? (
         <SpalashScreen />
+      ) : State.userToken === null ? (
+        <AuthStack />
       ) : (
-        // : State.userToken === null ? (
-        // <AuthStack />
-        // )
         <AppPage />
       )}
     </NavigationContainer>
